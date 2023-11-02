@@ -1,0 +1,239 @@
+[gd_scene load_steps=8 format=3 uid="uid://c57duuo5p7mc0"]
+
+[ext_resource type="Script" path="res://materials.gd" id="1_81rf8"]
+[ext_resource type="Environment" uid="uid://du5gp6ah0abgv" path="res://default_env.tres" id="2_iiict"]
+[ext_resource type="PackedScene" uid="uid://cgqfdwd4g5e14" path="res://models/test_bed/test_bed.tscn" id="3_eeq3w"]
+[ext_resource type="ArrayMesh" uid="uid://btydvpp0agbfj" path="res://models/godot_ball.res" id="4_4sqyn"]
+[ext_resource type="Material" uid="uid://b0qkg55h84i3f" path="res://materials/white.tres" id="6_idi41"]
+[ext_resource type="Material" uid="uid://bbfkhkmct7wu3" path="res://materials/blue.tres" id="7_rrw2d"]
+[ext_resource type="Material" uid="uid://d3u3snuqdn404" path="res://materials/gray.tres" id="8_4sk63"]
+
+[node name="Materials" type="Node3D"]
+script = ExtResource("1_81rf8")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_iiict")
+
+[node name="Testers" type="Node3D" parent="."]
+
+[node name="White Plastic" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/White Plastic"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Mirror" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Mirror"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Dark Wood" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Dark Wood"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Cheese" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Cheese"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Stones" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Stones"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Brick" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Brick"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Wool" parent="Testers" instance=ExtResource("3_eeq3w")]
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Wool"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Aluminium" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Aluminium"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Marble" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Marble"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Wet Sand" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Wet Sand"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Rock" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Rock"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Ice" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Ice"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="Toon" parent="Testers" instance=ExtResource("3_eeq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
+
+[node name="GodotBall" type="MeshInstance3D" parent="Testers/Toon"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0.5, -4)
+mesh = ExtResource("4_4sqyn")
+surface_material_override/1 = ExtResource("6_idi41")
+surface_material_override/2 = ExtResource("7_rrw2d")
+surface_material_override/3 = ExtResource("8_4sk63")
+
+[node name="CameraHolder" type="Node3D" parent="."]
+transform = Transform3D(0.877582, 0, -0.479427, 0, 1, 0, 0.479427, 0, 0.877582, -36, 2.8, -4)
+
+[node name="RotationX" type="Node3D" parent="CameraHolder"]
+transform = Transform3D(1, 0, 0, 0, 0.877582, 0.479427, 0, -0.479427, 0.877582, 0, 0, 0)
+
+[node name="Camera" type="Camera3D" parent="CameraHolder/RotationX"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+fov = 65.0
+near = 0.1
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="OptionButton" parent="UI"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 30.0
+offset_bottom = 36.0
+focus_mode = 0
+
+[node name="Previous" type="Button" parent="UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -64.0
+offset_right = 152.0
+offset_bottom = -16.0
+grow_vertical = 0
+focus_mode = 0
+text = "«  Previous"
+
+[node name="Next" type="Button" parent="UI"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -98.0
+offset_top = -64.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+focus_mode = 0
+text = "Next  »"
+
+[node name="MaterialName" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -58.0
+offset_right = 0.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+
+[node name="Quit" type="Button" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -89.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 52.0
+grow_horizontal = 0
+focus_mode = 0
+text = "Quit"
+
+[connection signal="item_selected" from="UI/Background" to="." method="_on_bg_item_selected"]
+[connection signal="pressed" from="UI/Previous" to="." method="_on_previous_pressed"]
+[connection signal="pressed" from="UI/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="UI/Quit" to="." method="_on_quit_pressed"]
