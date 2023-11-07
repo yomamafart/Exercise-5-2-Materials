@@ -12,7 +12,7 @@ Clone the repository to a Local Path on your computer.
 
 Open Godot. Import the project.godot file and open the "Material Tester" project.
 
-This exercise will invite you to adjust the materials of several sphere-like objects. Each of the objects is a mesh (called GodotBall) inside a Spatial scene. For each GodotBall, select the Mesh, and in the Inspector, select Material. For Material 0 (currently [empty]), select New NewStandardMaterial3D, and then adjust the parameters as described below. The textures appear in the FileSystem panel, and can the files can be dragged from that panel to the Texture field in the inspector. 
+This exercise will invite you to adjust the materials of several sphere-like objects. Each of the objects is a mesh (called GodotBall) inside a Node3D scene. For each GodotBall, select the Mesh, and in the Inspector, select Material. For Material 0 (currently [empty]), select New NewStandardMaterial3D, and then adjust the parameters as described below. The textures appear in the FileSystem panel, and can the files can be dragged from that panel to the Texture field in the inspector. 
 
 White Plastic
  * Metallic->Metallic: 0.4
